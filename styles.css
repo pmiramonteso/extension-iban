@@ -1,0 +1,56 @@
+body {
+    width: 350px;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+  }
+  h1 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .iban-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  .iban-text {
+    flex-grow: 1;
+    font-family: monospace;
+  }
+  .indicator {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin-left: 10px;
+  }
+  .verified {
+    background-color: #4CAF50;
+  }
+  .unverified {
+    background-color: #F44336;
+  }
+  .no-ibans {
+    color: #666;
+    font-style: italic;
+  }
+  button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #4285F4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #3367D6;
+  }
+  .debug-info {
+    margin-top: 10px;
+    padding: 5px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    font-size: 12px;
+  }
