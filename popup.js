@@ -17,14 +17,19 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         ibans.forEach(iban => {
             let listItem = document.createElement("li");
-            listItem.textContent = iban;
+
+            let statusIcon = document.createElement("span");
+            statusIcon.classList.add("status-icon");
+
          
             if (ibanJson.includes(iban)) {
-                listItem.style.color = "red";
+                statusIcon.classList.add("green");
             } else {
-                listItem.style.color = "green";
+                statusIcon.classList.add("red");
             }
 
+            listItem.appendChild(document.createTextNode(iban));
+            listItem.appendChild(statusIcon);
             ibanList.appendChild(listItem);
         });
     });

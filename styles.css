@@ -3,38 +3,39 @@ body {
     padding: 10px;
     font-family: Arial, sans-serif;
   }
-  h1 {
+h1 {
     font-size: 18px;
     margin-bottom: 10px;
   }
-  .iban-item {
+
+#iban-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#iban-list li {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    margin-bottom: 8px;
-    padding: 5px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-  }
-  .iban-text {
-    flex-grow: 1;
-    font-family: monospace;
-  }
-  .indicator {
-    width: 16px;
-    height: 16px;
+    padding: 5px 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.status-icon {
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
-    margin-left: 10px;
-  }
-  .verified {
-    background-color: #4CAF50;
-  }
-  .unverified {
-    background-color: #F44336;
-  }
-  .no-ibans {
-    color: #666;
-    font-style: italic;
-  }
+}
+
+.green {
+  background-color: green;
+}
+
+.red {
+  background-color: red;
+}
+
   button {
     margin-top: 10px;
     padding: 5px 10px;
